@@ -12,7 +12,7 @@ public class SimpleQueue<T> {
     public T poll() {
         if (sizeOut == 0) {
             if (sizeIn == 0) {
-                throw new NoSuchElementException("Queue is Empty");
+                throw new NoSuchElementException("Queue is empty");
             }
             for (int i = 0; i < sizeIn; i++) {
                 output.push(input.pop());
